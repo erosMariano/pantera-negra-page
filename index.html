@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container navigation animate-top">
+        <nav class="nav">
+            <a href="index.html"><img src="./img/logo-eros.png" class="logo"></a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link"><span>Contact</span></a>
+            </li>
+            <div class="search">
+                <input type="text" placeholder="SEARCH HERO"><i class="fas fa-search"></i>
+            </div>
+        </ul>
+    </div>
+</header>
+
+    <div class="container">
+        <div class="landing">
+            <div class="text-principal animate-left">
+                <img src="/img/panteraNegra/logo-marvel.png">
+                <h1>Black Panther</h1>
+                <h2>Secret identity is that of T'Challa</h2>
+    
+                <p class="animate-left">
+                    Black Panther is a superhero from the comic books published by Marvel Comics, whose secret identity is that of T'Challa, king of Wakanda, a fictional kingdom in Africa. The character was created by writer and editor Stan Lee and writer and illustrator Jack Kirby, appearing for the first time in Fantastic Four # 52 (July 1966) in the Silver Age of comic books. In addition to possessing enhanced skills achieved through an ancient Wakanda ritual, T'Challa also has brilliant genius, rigorous physical training, martial arts skills, access to advanced technologies and wealth to fight his enemies.
+                </p>
+    
+                <div class="youtube">
+                    <i class="fab fa-youtube"></i><a href="https://www.youtube.com/watch?v=wL4a4MafSjQ" target="_blank"><p>Watch on YouTube</p></a>
+                </div>
+    
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fas fa-share-alt"></i></a>
+                    <a href="#"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"  target="_blank"><i class="fab fa-instagram"></i></a>                
+                </div>
+            </div>
+            <div class="panther">
+                <img src="./img/panteraNegra/perfil1.png" class="animate-right">
+            </div>
+        </div>
+        <div class="abaixar">
+            <i class="fas fa-angle-double-down"></i>
+        </div>
+</section>
+
+
+
+
+
+    <script>
+        const selectElement = function(element){
+        return document.querySelector(element)
+        }
+
+        let menuToogler = selectElement('.menu-toggle')
+        let body = selectElement('body');
+        console.log(menuToogler)
+        menuToogler.addEventListener('click',()=>{
+            body.classList.toggle('open')
+        })
+
+
+        window.sr = ScrollReveal();
+        sr.reveal('.animate-left',{
+            origin:'left',
+            duration:1000,
+            distance:'25rem',
+            delay:300
+        });
+
+        sr.reveal('.animate-right',{
+            origin:'right',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+        sr.reveal('.animate-top',{
+            origin:'top',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+        sr.reveal('.animate-bottom',{
+            origin:'bottom',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        });
+    </script>
+</body>
+</html>
